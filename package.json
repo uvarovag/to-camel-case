@@ -1,6 +1,6 @@
 {
     "name": "@uvarovag/to-camel-case",
-    "version": "1.0.5",
+    "version": "1.0.9",
     "main": "dist/index.js",
     "module": "dist.es2015/index.js",
     "types": "dist/index.d.ts",
@@ -8,7 +8,6 @@
         "dist",
         "dist.es2015"
     ],
-    "type": "module",
     "scripts": {
         "build:cjs": "tsc --project tsconfig.cjs.json",
         "build:esm": "tsc --project tsconfig.esm.json",
@@ -33,7 +32,12 @@
     ],
     "author": "@uvarovag",
     "license": "MIT",
-    "description": "",
+    "description": "to-camel-case",
+    "homepage": "https://github.com/uvarovag/to-camel-case/blob/master/README.md",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/uvarovag/to-camel-case.git"
+    },
     "devDependencies": {
         "@types/jest": "^29.5.14",
         "@types/node": "^22.10.1",
