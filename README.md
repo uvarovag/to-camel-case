@@ -21,8 +21,8 @@ npm install @uvarovag/to-camel-case
 ```ts
 import toCamelCase from '@uvarovag/to-camel-case'
 
-const result: string = toCamelCase('Привет мир')
-console.log(result) // Outputs: 'приветМир'
+const result: string = toCamelCase('hello-world-test')
+console.log(result) // Outputs: 'приветМирТест'
 ```
 
 ## Examples
