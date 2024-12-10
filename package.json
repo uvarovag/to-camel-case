@@ -1,6 +1,6 @@
 {
     "name": "@uvarovag/to-camel-case",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "main": "dist/index.js",
     "module": "dist.es2015/index.js",
     "types": "dist/index.d.ts",
@@ -32,7 +32,7 @@
     ],
     "author": "@uvarovag",
     "license": "MIT",
-    "description": "to-camel-case",
+    "description": "Hard conversion of a string to camel case",
     "homepage": "https://github.com/uvarovag/to-camel-case/blob/master/README.md",
     "repository": {
         "type": "git",
