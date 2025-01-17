@@ -12,9 +12,9 @@
         "build:cjs": "tsc --project tsconfig.cjs.json",
         "build:esm": "tsc --project tsconfig.esm.json",
         "build": "npm run build:cjs && npm run build:esm",
-        "lint:fix": "prettier --write '**/*.{ts,tsx,js,json,css,html,md}' && eslint '**/*.{ts,tsx}' --fix",
+        "fix": "prettier --write '**/*.{ts,tsx,js,json,css,html,md}' && eslint '**/*.{ts,tsx}' --fix",
         "test": "npx jest",
-        "publish": "npm run lint:fix && npm run test && npm run build && npm publish --access public"
+        "publish": "npm run fix && npm run test && npm run build && npm publish --access public"
     },
     "keywords": [
         "camelcase",
