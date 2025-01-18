@@ -1,6 +1,7 @@
 {
     "name": "@uvarovag/to-camel-case",
-    "version": "1.0.13",
+    "version": "1.0.14",
+    "description": "Hard conversion of a string to camel case",
     "main": "dist/index.js",
     "module": "dist.es2015/index.js",
     "types": "dist/index.d.ts",
@@ -12,9 +13,9 @@
         "build:cjs": "tsc --project tsconfig.cjs.json",
         "build:esm": "tsc --project tsconfig.esm.json",
         "build": "npm run build:cjs && npm run build:esm",
-        "fix": "prettier --write '**/*.{ts,tsx,js,json,css,html,md}' && eslint '**/*.{ts,tsx}' --fix",
+        "lint:fix": "prettier --write '**/*.{ts,tsx,js,json,css,html,md}' && eslint '**/*.{ts,tsx}' --fix && npm pkg fix",
         "test": "npx jest",
-        "publish": "npm run fix && npm run test && npm run build && npm publish --access public"
+        "publish": "npm run lint:fix && npm run test && npm run build && npm publish --access public"
     },
     "keywords": [
         "camelcase",
@@ -32,7 +33,6 @@
     ],
     "author": "@uvarovag",
     "license": "MIT",
-    "description": "Hard conversion of a string to camel case",
     "homepage": "https://github.com/uvarovag/to-camel-case/blob/master/README.md",
     "repository": {
         "type": "git",
@@ -43,7 +43,7 @@
         "@types/node": "^22.10.1",
         "@typescript-eslint/eslint-plugin": "^8.17.0",
         "@typescript-eslint/parser": "^8.17.0",
-        "@uvarovag/prettier-config-ts-react": "^1.0.0",
+        "@uvarovag/prettier-config-ts-react": "^1.0.6",
         "eslint": "^9.16.0",
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-prettier": "^5.2.1",
