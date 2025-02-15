@@ -15,7 +15,7 @@
         "build": "npm run build:cjs && npm run build:esm",
         "lint:fix": "prettier --write '**/*.{ts,tsx,js,json,css,html,md}' && eslint '**/*.{ts,tsx}' --fix && npm pkg fix",
         "test": "npx jest",
-        "deploy": "npm run lint:fix && npm run test && npm run build && npm publish --access public"
+        "deploy": "npm run lint:fix && npm run test && npm run build && npm publish"
     },
     "keywords": [
         "camelcase",
@@ -37,6 +37,9 @@
     "repository": {
         "type": "git",
         "url": "git+https://github.com/uvarovag/to-camel-case.git"
+    },
+    "publishConfig": {
+        "access": "public"
     },
     "devDependencies": {
         "@types/jest": "^29.5.14",
