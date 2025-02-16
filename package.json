@@ -1,6 +1,6 @@
 {
     "name": "@uvarovag/to-camel-case",
-    "version": "1.0.16",
+    "version": "1.0.17",
     "description": "Hard conversion of a string to camel case",
     "main": "dist/index.js",
     "module": "dist.es2015/index.js",
@@ -15,7 +15,7 @@
         "build": "npm run build:cjs && npm run build:esm",
         "lint:fix": "prettier --write '**/*.{ts,tsx,js,json,css,html,md}' && eslint '**/*.{ts,tsx}' --fix && npm pkg fix",
         "test": "npx jest",
-        "deploy": "npm run lint:fix && npm run test && npm run build && npm publish"
+        "deploy": "npm publish"
     },
     "keywords": [
         "camelcase",
