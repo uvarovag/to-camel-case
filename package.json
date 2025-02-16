@@ -15,7 +15,8 @@
         "build": "npm run build:cjs && npm run build:esm",
         "lint:fix": "prettier --write '**/*.{ts,tsx,js,json,css,html,md}' && eslint '**/*.{ts,tsx}' --fix && npm pkg fix",
         "test": "npx jest",
-        "deploy": "npm publish"
+        "deploy": "npm publish",
+        "prepare": "husky"
     },
     "keywords": [
         "camelcase",
@@ -47,6 +48,7 @@
         "@uvarovag/eslint-config-ts": "^1.0.20",
         "@uvarovag/prettier-config": "^1.0.6",
         "eslint": "^9.18.0",
+        "husky": "^9.1.7",
         "jest": "^29.7.0",
         "prettier": "^3.4.2",
         "ts-jest": "^29.2.5",
