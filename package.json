@@ -13,7 +13,7 @@
         "build:cjs": "tsc --project tsconfig.cjs.json",
         "build:esm": "tsc --project tsconfig.esm.json",
         "build": "npm run build:cjs && npm run build:esm",
-        "lint:fix": "prettier --write '**/*.{ts,tsx,js,json,css,html,md}' && eslint '**/*.{ts,tsx}' --fix && npm pkg fix",
+        "lint:fix": "eslint '**/*.{ts,tsx}' --fix && prettier --write '**/*.{ts,tsx,js,json,css,html,md}'",
         "test": "npx jest",
         "deploy": "npm publish",
         "prepare": "husky"
