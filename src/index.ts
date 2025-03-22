@@ -1,4 +1,4 @@
-export default function toCamelCase(str: string): string {
+export const toCamelCase = (str: string): string => {
     return str
         .toLowerCase()
         .split(/[^a-zA-Zа-яА-ЯёЁ0-9]+/)

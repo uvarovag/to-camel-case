@@ -15,7 +15,7 @@ npm install @uvarovag/to-camel-case
 ### ES Modules (ESM)
 
 ```js
-import toCamelCase from '@uvarovag/to-camel-case'
+import { toCamelCase } from '@uvarovag/to-camel-case'
 
 const result = toCamelCase('hello-world-test')
 console.log(result) // Outputs: 'helloWorldTest'

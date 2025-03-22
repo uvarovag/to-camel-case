@@ -1,6 +1,6 @@
 {
     "name": "@uvarovag/to-camel-case",
-    "version": "1.0.17",
+    "version": "2.0.0",
     "description": "Hard conversion of a string to camel case",
     "main": "dist/index.js",
     "module": "dist.es2015/index.js",
