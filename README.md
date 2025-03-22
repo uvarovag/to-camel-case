@@ -1,5 +1,6 @@
 # to-camel-case
 
+![Bundle Size](https://img.shields.io/bundlephobia/minzip/@uvarovag/to-camel-case)
 ![tests](https://github.com/uvarovag/to-camel-case/actions/workflows/publish.yml/badge.svg)
 
 Lightweight utility function to convert strings into camelCase format. Supports both Latin and Cyrillic characters and works seamlessly with various delimiters such as spaces, underscores, hyphens, and more.
