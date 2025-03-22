@@ -1,4 +1,4 @@
-import toCamelCase from './'
+import { toCamelCase } from './'
 
 describe('toCamelCase', () => {
     test('converts space-separated words to camel case', () => {
