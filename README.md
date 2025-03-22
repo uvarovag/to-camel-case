@@ -1,14 +1,8 @@
 # to-camel-case
 
-A lightweight utility function to convert strings into camelCase format. Supports both Latin and Cyrillic characters and works seamlessly with various delimiters such as spaces, underscores, hyphens, and more.
+![tests](https://github.com/uvarovag/to-camel-case/actions/workflows/publish.yml/badge.svg)
 
-## Features
-
-- Converts strings to camelCase.
-- Handles multiple word delimiters (e.g., spaces, underscores, hyphens).
-- Supports Latin and Cyrillic alphabets.
-- Strips non-alphanumeric characters.
-- Lightweight and dependency-free.
+Lightweight utility function to convert strings into camelCase format. Supports both Latin and Cyrillic characters and works seamlessly with various delimiters such as spaces, underscores, hyphens, and more.
 
 ## Installation
 
@@ -18,10 +12,21 @@ npm install @uvarovag/to-camel-case
 
 ## Usage
 
-```ts
+### ES Modules (ESM)
+
+```js
 import toCamelCase from '@uvarovag/to-camel-case'
 
-const result: string = toCamelCase('hello-world-test')
+const result = toCamelCase('hello-world-test')
+console.log(result) // Outputs: 'helloWorldTest'
+```
+
+### CommonJS (CJS)
+
+```js
+const { toCamelCase } = require('@uvarovag/to-camel-case')
+
+const result = toCamelCase('hello-world-test')
 console.log(result) // Outputs: 'helloWorldTest'
 ```
 
